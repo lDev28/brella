@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background-color: #43806C;
+  color: #fff;
+}
+
+footer {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+}
