@@ -8,7 +8,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/sections.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="shortcut icon" href="sources/icons/favicon.png">
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@700&display=swap"
+		rel="stylesheet">
 	<title>Brella</title>
 </head>
 
@@ -18,7 +24,12 @@
 			<div class="container">
 				<div class="header__body">
 					<a href="#" class="header__logo">
-						<img src="sources/icons/myLogo.png" alt="lDev28">
+						<img src="sources/icons/b.png">
+						<img src="sources/icons/r.png">
+						<img src="sources/icons/e.png">
+						<img src="sources/icons/l.png">
+						<img src="sources/icons/l.png">
+						<img src="sources/icons/a.png">
 					</a>
 					<div class="header__burger" id="burgerMenu">
 						<span></span>
@@ -45,9 +56,14 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="header__contact head-contact">
-						<button class="head-contact__btn button">Request a demo</button>
-					</div>
+					<nav class="header__control control-nav">
+						<button class="control-nav__btn button">Request a demo</button>
+						<a href="#" class="control-nav__login">
+							Log in
+							<img class="control-nav__login-img" src="sources/icons/arrow.png">
+						</a>
+						<button class="control-nav__lang-btn">EN</button>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -56,18 +72,130 @@
 		<main class="main">
 			<div class="container">
 				<section class="banner">
-
+					<h1 class="banner__title">Give your team peace of mind <br> with supplemental health <br> insurance from
+						Brella.
+					</h1>
+					<form action="#" class="banner__form search-form">
+						<label class="search-form__title" for="search">I'm wondering...</label>
+						<div class="search-form__goup">
+							<input class="search-form__input" type="text" name="search" placeholder="how Brella's plan works">
+							<button class="search-form__button button">Find out</button>
+						</div>
+					</form>
 				</section>
 			</div>
 		</main>
 
+		<section class="sub-banner-container">
+			<div class="container">
+				<div class="sub-banner">
+					<div class="sub-banner__container">
+						<div class="sub-banner__block">
+							<img src="sources/icons/coverage.png" class="sub-banner__icon">
+							<div class="sub-banner__content-block">
+								<p class="sub-banner__title">More coverage</p>
+								<p class="sub-banner__subtitle">Brella covers 13,000+ injuries and illnesses from concussions to
+									cancer.
+								</p>
+							</div>
+						</div>
+						<div class="sub-banner__block">
+							<img src="sources/icons/hassle.png" class="sub-banner__icon">
+							<div class="sub-banner__content-block">
+								<p class="sub-banner__title">Less hassle</p>
+								<p class="sub-banner__subtitle">One easy-to-manage plan with paperless install and online admin
+									tools.
+								</p>
+							</div>
+						</div>
+						<div class="sub-banner__block">
+							<img src="sources/icons/benefits.png" class="sub-banner__icon">
+							<div class="sub-banner__content-block">
+								<p class="sub-banner__title">Faster benefits</p>
+								<p class="sub-banner__subtitle">Brella pays claims in hours–not weeks so your people can rest
+									easy.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 		<footer>
-
-			<a href="https://www.figma.com/file/ctweArVRpACH4bBe56hSFH/Brella?node-id=1%3A2&t=TiikS5pueOow6U0Q-0">link to
-				figma</a>
+			<div class="container">
+				<div class="footer">
+					<div class="footer__row">
+						<div class="footer__link-block">
+							<img src="sources/icons/footer-logo.png" alt="Brella" class="footer__logo">
+							<ul class="footer__links">
+								<h3 class="footer__link-header">Join Brella</h3>
+								<li><a href="#" class="footer__link">Our Plan</a></li>
+								<li><a href="#" class="footer__link">Employers</a></li>
+								<li><a href="#" class="footer__link">Brokers</a></li>
+								<li><a href="#" class="footer__link">Members</a></li>
+							</ul>
+							<ul class="footer__links">
+								<h3 class="footer__link-header">Company</h3>
+								<li><a href="#" class="footer__link">About</a></li>
+								<li><a href="#" class="footer__link">Blog</a></li>
+								<li><a href="#" class="footer__link">Careers</a></li>
+								<li><a href="#" class="footer__link">Contact</a></li>
+							</ul>
+						</div>
+						<form action="#" class="footer__form">
+							<p class="footer__form-title">Get the latest</p>
+							<p class="footer__form-subtitle">Sign up to receive benefits news and insights in your inbox
+								once a month.</p>
+							<div class="footer__form-components">
+								<input type="email" name="email" class="footer__input" placeholder="*Email">
+								<button class="footer__btn">
+									<img src="sources/icons/right-arrow.png">
+								</button>
+							</div>
+							<div class="footer__linked-icons">
+								<a href="#">
+									<img src="sources/icons/in.png" class="footer__linked-icon">
+								</a>
+								<a href="#">
+									<img src="sources/icons/twitter.png" class="footer__linked-icon">
+								</a>
+								<a href="#">
+									<img src="sources/icons/youtube.png" class="footer__linked-icon">
+								</a>
+							</div>
+						</form>
+					</div>
+					<!-- END of footer__row -->
+					<div class="footer__content">
+						<p class="footer__paragraph">Brella is a limited benefit policy; it is not a substitute for health
+							insurance. The information provided on this website is illustrative only. A complete description of
+							benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable
+							Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not
+							guarantee an amount to be paid for listed conditions. Product not available in all states. All
+							coverage is subject to the terms and conditions of the master group policy.</p>
+						<p class="footer__paragraph">Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055).
+							Form No. PFSB11-TX</p>
+						<div class="footer__paragraph-block">
+							<p class="footer__paragraph">Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703
+								and
+								by phone at</p> <span class="footer__paragraph footer__paragraph_span">(844) 987-1070</span>
+						</div>
+						<div class="footer__footer">
+							<p class="footer__paragraph">© 2021 Brella Insurance Inc. All Rights Reserved.</p>
+							<div class="footer__paragraph-block">
+								<p class="footer__paragraph">Privacy</p>
+								<p class="footer__paragraph last-paragraph">Terms of Service</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</footer>
+		<a href="https://www.figma.com/file/ctweArVRpACH4bBe56hSFH/Brella?node-id=1%3A2&t=TiikS5pueOow6U0Q-0">link to
+			figma</a>
 	</div>
 	<!-- end of wrapper -->
 </body>

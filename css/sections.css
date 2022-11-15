@@ -1,14 +1,95 @@
 .main {
   height: 100%;
   width: 100%;
-  margin: 90px 0px 0px 0px;
   flex: 1 0 auto;
   background: url(../img/mainbg.jpg);
   background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .banner {
   height: 100%;
   width: 100%;
-  background: url(../img/mainbg.jpg);
+}
+.banner__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #43806C;
+  margin: 0px 0px 40px 0px;
+}
+.search-form__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #1C2323;
+  font-size: 16px;
+  line-height: 24px;
+  color: #43806C;
+}
+.search-form__goup {
+  margin: 16px 0;
+}
+.search-form__input {
+  height: 60px;
+  padding: 0 0 0 10px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+  outline: none;
+}
+.search-form__button {
+  height: 60px;
+  border-radius: 0px 6px 6px 0px;
+  margin: 0px 0px 0px -5px;
+}
+
+.sub-banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
+  border-radius: 6px;
+  margin: -75px 0px 0px 0px;
+  background-color: #fff;
+}
+.sub-banner__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  width: 100%;
+}
+.sub-banner__block {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 350px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-banner__icon {
+  margin: 10px;
+}
+.sub-banner__title {
+  color: #43806C;
+  font-size: 16px;
+  margin: 7px 0;
+}
+.sub-banner__subtitle {
+  color: #43806C;
+  margin: 0;
 }

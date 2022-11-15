@@ -3,6 +3,20 @@ $black: #1C2323;
 $white: #fff;
 $smalltxt: #404242;
 
+@mixin header-text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin link-text {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+}
+
 html,
 body {
 	margin: 0px 0px 0px 0px;
@@ -26,6 +40,10 @@ body {
 }
 
 button {
+	cursor: pointer;
+}
+
+.button {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 700;
@@ -35,13 +53,10 @@ button {
 	height: 40px;
 	border-radius: 6px;
 	border: none;
+	padding: 10px 15px;
 
 	background-color: $maincolor;
 	color: $white;
-}
 
-footer {
-	flex: 1 1 auto;
-	display: flex;
-	align-items: flex-end;
+	cursor: pointer;
 }

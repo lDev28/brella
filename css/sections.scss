@@ -1,14 +1,131 @@
+$maincolor: #43806C;
+$black: #1C2323;
+$white: #fff;
+$smalltxt: #404242;
+
+@mixin header-text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 46px;
+	color: $maincolor;
+}
+
+@mixin link-text {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration: none;
+	color: $black;
+}
+
+@mixin small-text {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
 .main {
 	height: 100%;
 	width: 100%;
-	margin: 90px 0px 0px 0px;
 	flex: 1 0 auto;
 	background: url(../img/mainbg.jpg);
 	background-size: cover;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
 
 .banner {
 	height: 100%;
 	width: 100%;
-	background: url(../img/mainbg.jpg);
+	// align-items: center;
+
+	&__title {
+		@include header-text;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__form {}
+}
+
+.search-form {
+
+	&__title {
+		@include link-text;
+		font-size: 16px;
+		line-height: 24px;
+		color: $maincolor;
+	}
+
+	&__goup {
+		margin: 16px 0;
+	}
+
+	&__input {
+		height: 60px;
+		padding: 0 0 0 10px;
+		margin: 0px 0px 0px 0px;
+		border-radius: 6px 0px 0px 6px;
+		border: none;
+		outline: none;
+	}
+
+	&__button {
+		height: 60px;
+		border-radius: 0px 6px 6px 0px;
+		margin: 0px 0px 0px -5px;
+	}
+}
+
+
+.sub-banner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
+	border-radius: 6px;
+	margin: -75px 0px 0px 0px;
+	background-color: $white;
+
+	&__container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 50px;
+		width: 100%;
+	}
+
+	&__block {
+		@include small-text;
+		max-width: 350px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icon {
+		margin: 10px;
+	}
+
+	&__content-block {}
+
+	&__title {
+		color: $maincolor;
+		font-size: 16px;
+		margin: 7px 0;
+	}
+
+	&__subtitle {
+		color: $maincolor;
+		margin: 0;
+	}
 }

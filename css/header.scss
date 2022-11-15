@@ -3,6 +3,21 @@ $black: #1C2323;
 $white: #fff;
 $smalltxt: #404242;
 
+@mixin header-text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin link-text {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration: none;
+	color: $black;
+}
 
 .header::before {
 	content: " ";
@@ -34,18 +49,13 @@ $smalltxt: #404242;
 	&__logo {
 		position: relative;
 		z-index: 3;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		text-decoration: none;
 	}
 
 	// LOGO img
-	// &__logo img {
-	// 	width: 50px;
-	// 	height: 50px;
-	// 	border-radius: 50%;
-	// 	transition: .3s;
-	// }
+	&__logo>img {
+		margin: 0px -3px 0px 0px;
+	}
 
 	&__list {
 		display: flex;
@@ -63,13 +73,12 @@ $smalltxt: #404242;
 	}
 
 	&__link {
-		font-family: 'Roboto', sans-serif;
-		font-size: 16px;
+		@include link-text;
 		text-decoration: none;
 		color: $black;
 	}
 
-	&__contact {
+	&__control {
 		position: relative;
 		z-index: 3;
 		display: flex;
@@ -78,6 +87,30 @@ $smalltxt: #404242;
 		flex-flow: row nowrap;
 	}
 }
+
+.control-nav {
+
+	&__login {
+		@include link-text;
+		position: relative;
+		margin: 30px;
+
+		&-img {
+			transition: all .2s;
+		}
+
+		&-img:hover {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__lang-btn {
+		@include link-text;
+		border: none;
+		background-color: transparent;
+	}
+}
+
 
 @media only screen and (max-width: 750px) {
 	.header::before {
@@ -90,10 +123,10 @@ $smalltxt: #404242;
 			height: 60px;
 		}
 
-		&__logo img {
-			width: 50px;
-			height: 50px;
-		}
+		// &__logo img {
+		// 	width: 50px;
+		// 	height: 50px;
+		// }
 
 		&__burger::before,
 		&__burger::after {

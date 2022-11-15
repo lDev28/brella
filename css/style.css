@@ -21,6 +21,10 @@ body {
 }
 
 button {
+  cursor: pointer;
+}
+
+.button {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -29,12 +33,8 @@ button {
   height: 40px;
   border-radius: 6px;
   border: none;
+  padding: 10px 15px;
   background-color: #43806C;
   color: #fff;
-}
-
-footer {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: flex-end;
+  cursor: pointer;
 }
