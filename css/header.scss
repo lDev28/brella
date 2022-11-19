@@ -121,6 +121,10 @@ $smalltxt: #404242;
 
 		&__body {
 			height: 60px;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
 		}
 
 		// &__logo img {
@@ -211,8 +215,12 @@ $smalltxt: #404242;
 
 }
 
-// @media only screen and (max-width: 850px) {
-// 	.head-contact {
-// 		display: none;
-// 	}
-// }
+@media only screen and (max-width: 900px) {
+	.header {
+
+		&__control {
+			display: none;
+		}
+	}
+
+}

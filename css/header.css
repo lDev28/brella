@@ -101,6 +101,10 @@
 
   .header__body {
     height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   .header__burger::before, .header__burger::after {
     content: " ";
@@ -168,5 +172,10 @@
   }
   .header__list li {
     margin: 0px 0px 10px 0px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header__control {
+    display: none;
   }
 }
