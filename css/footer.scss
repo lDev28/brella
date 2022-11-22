@@ -146,16 +146,6 @@ footer {
 		margin: 0px 25px 0px 0px;
 	}
 
-	// &__linked-icons>a:last-child::before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 8px;
-	// 	height: 7px;
-	// 	background-color: $maincolor;
-	// }
-
 	&__content {
 		width: 100%;
 		display: flex;
@@ -215,4 +205,47 @@ footer {
 	width: 1px;
 	background-color: $white;
 	margin: 0 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.footer {
+
+		&__link-block {
+			flex-flow: column;
+		}
+
+		&__link-header {
+			margin: 30px 0 0 0;
+		}
+
+		&__paragraph-block {
+			margin: 30px 0;
+			flex-flow: column;
+		}
+
+		&__paragraph-block_last {
+			flex-flow: row nowrap;
+		}
+
+		&__footer {
+			flex-flow: column;
+			margin: 0;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+	.footer {
+
+		&__row {
+			flex-flow: column;
+		}
+
+		&__logo {
+			margin: 0;
+			width: 95px;
+		}
+	}
 }
