@@ -456,6 +456,82 @@
     padding: 0 10px;
   }
 }
+.slider {
+  margin: 120px 0;
+}
+.slider__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #214E41;
+  margin: 0 0 115px 0;
+}
+.slider__body {
+  width: 100%;
+  position: relative;
+}
+.slider__track {
+  display: flex;
+  transition: 0.5s;
+}
+.slider__item {
+  height: 100px;
+  min-width: 20%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider__item img {
+  max-width: 100%;
+}
+.slider__btns {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.slider__btn-prev, .slider__btn-next {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0 -15px;
+}
+
+.slider > .container {
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .slider__item {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .slider__item {
+    width: 33.333%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slider__item {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .slider__item {
+    width: 100%;
+  }
+}
 .help {
   position: relative;
   background-color: #E3EEED;
