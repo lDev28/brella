@@ -50,10 +50,6 @@ button {
   max-width: 100%;
 }
 
-#btnTop.active {
-  display: none;
-}
-
 .button {
   font-family: "Raleway";
   font-style: normal;

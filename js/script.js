@@ -7,7 +7,7 @@ function myBurger() {
 	$.querySelector('.header__menu').classList.toggle('active')
 	$.querySelector('.header__burger').classList.toggle('active')
 	$.body.classList.toggle('active')
-	$.querySelector('#btnTop').classList.toggle('active')
+	$.querySelector('#btnTop').classList.toggle('btnactive')
 }
 
 
@@ -31,3 +31,7 @@ window.addEventListener('scroll', () => {
 	}
 
 })
+
+
+// const cHight = $.getElementById('employers')
+// console.log(cHight.offsetHeight);
