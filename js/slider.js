@@ -2,8 +2,6 @@ let position = 0
 let slidesToShow = 5
 let slidesToScroll = 2
 
-
-
 const sliderContainer = document.querySelector('.slider__body')
 const sliderTrack = document.querySelector('.slider__track')
 const sliderItems = document.querySelectorAll('.slider__item')

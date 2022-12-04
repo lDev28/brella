@@ -44,6 +44,35 @@ button {
 	cursor: pointer;
 }
 
+#btnTop {
+	width: 40px;
+	min-height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	z-index: 1000;
+	transition: .3s;
+	box-shadow: #1c23236a 2px 2px 2px 2px;
+	display: none;
+	opacity: 0;
+}
+
+#btnTop:hover {
+	transform: scale(1.15);
+}
+
+#btnTop img {
+	max-width: 100%;
+}
+
+#btnTop.active {
+	display: none;
+}
+
 .button {
 	font-family: 'Raleway';
 	font-style: normal;
