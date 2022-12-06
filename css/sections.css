@@ -654,6 +654,13 @@
   object-fit: cover;
   object-position: left top;
 }
+.employers__body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
 .employers__top-title {
   font-family: "Raleway";
   font-style: normal;
@@ -706,6 +713,11 @@
   margin: 15px 0 0 0;
 }
 
+@media only screen and (max-width: 720px) {
+  .employers__body {
+    width: 100%;
+  }
+}
 .slider {
   margin: 120px 0;
 }

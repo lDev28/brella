@@ -32,6 +32,8 @@ window.addEventListener('scroll', () => {
 
 })
 
-
-// const cHight = $.getElementById('employers')
-// console.log(cHight.offsetHeight);
+function getImgHieght() {
+	const cHight = $.getElementById('employers').offsetHeight
+	$.getElementById('employersBody').style.height = `${cHight}px`
+}
+getImgHieght()

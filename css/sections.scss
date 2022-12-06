@@ -853,7 +853,13 @@ $smalltxt: #404242;
 		object-position: left top;
 	}
 
-	&__body {}
+	&__body {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 50%;
+	}
 
 	&__top-title {
 		font-family: 'Raleway';
@@ -920,8 +926,13 @@ $smalltxt: #404242;
 	}
 }
 
-.container {}
-
+@media only screen and (max-width: 720px) {
+	.employers {
+		&__body {
+			width: 100%;
+		}
+	}
+}
 
 
 .slider {
