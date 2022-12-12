@@ -24,7 +24,10 @@ function render() {
 		slidesToShow = 5
 	}
 }
+window.addEventListener('resize', render)
 render()
+
+
 
 const itemWidth = sliderContainer.clientWidth / slidesToShow
 const movePosition = slidesToScroll * itemWidth

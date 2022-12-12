@@ -36,4 +36,6 @@ function getImgHieght() {
 	const cHight = $.getElementById('employers').offsetHeight
 	$.getElementById('employersBody').style.height = `${cHight}px`
 }
+
+window.addEventListener('resize', getImgHieght)
 getImgHieght()

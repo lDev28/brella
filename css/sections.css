@@ -645,14 +645,19 @@
 }
 .employers {
   position: relative;
-  min-height: 800px;
+  min-height: 500px;
+  width: 100%;
 }
 .employers__img {
   position: absolute;
-  min-width: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 500px;
+  max-height: 500px;
   z-index: -1;
   object-fit: cover;
-  object-position: left top;
+  object-position: left;
 }
 .employers__body {
   display: flex;
@@ -660,6 +665,7 @@
   justify-content: center;
   align-items: flex-start;
   width: 50%;
+  overflow: hidden;
 }
 .employers__top-title {
   font-family: "Raleway";
@@ -690,6 +696,7 @@
   /* or 167% */
   letter-spacing: 0.02px;
   color: #757575;
+  max-width: 500px;
 }
 .employers__link {
   position: relative;
@@ -702,6 +709,7 @@
   text-align: center;
   letter-spacing: 0.02px;
   color: #214E41;
+  margin: 20px 0;
 }
 .employers__link::after {
   content: "";
